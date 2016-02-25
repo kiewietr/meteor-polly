@@ -8,7 +8,7 @@ Template.pollyIframe.helpers({
 })
 
 Template.pollyIframe.events({
-    'click .polly_close' () {
+    'click .polly_close' : function () {
         Polly.hide()
     }
 })

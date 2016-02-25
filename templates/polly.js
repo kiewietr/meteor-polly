@@ -1,5 +1,5 @@
 Template.pollyHelpLink.events({
-    'click #pollyHelpLink' () {
+    'click #pollyHelpLink' : function () {
         Polly.show();
     }
 })
