@@ -1,0 +1,10 @@
+<template name="pollyIframe">
+    {{#if polly}}
+        <div id="polly_help_window_wrapper">
+            <div style="width: {{polly.options.helpcenter.width}}px">
+                <span class="polly_close" style="background-color: {{polly.options.helpcenter.closeButtonBackgroundColor}}; color: {{polly.options.helpcenter.closeButtonForegroundColor}}">X</span>
+        		<iframe id="polly_help_iframe" src="http://188.166.0.207/help/{{polly.options.publicationId}}" frameborder="0" height="{{polly.options.helpcenter.height}}" width="{{polly.options.helpcenter.width}}"></iframe>
+            </div>
+        </div>
+    {{/if}}
+</template>
