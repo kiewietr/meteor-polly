@@ -2,7 +2,7 @@ Package.describe({
   name: "kiewietr:polly",
   summary: "Package to add Polly Help Center to your meteor app. Add simple link with {{> pollyHelpLink}}",
   version: "1.0.0",
-  git: "",
+  git: "https://github.com/kiewietr/meteor-polly",
   documentation: "README.md"
 });
 
