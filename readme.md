@@ -8,6 +8,8 @@ Polly helps you to answer your customers queries. Use this package to add the de
 4. License
 
 #### Installation
+Make sure you have an account at [Polly](https://app.polly.help/) and have created a publication.
+
 To get Polly into your app, just run the following command from within your project's directory:
 
 ```
