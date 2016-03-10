@@ -1,8 +1,3 @@
-NOT PRODUCTION READY, todo:
-
-* switch to https
-* wait for official polly domain
-
 ### Polly
 Polly helps you to answer your customers queries. Use this package to add the default help center to your meteor app. You will need an existing publication in Polly.
 
