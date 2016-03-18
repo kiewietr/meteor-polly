@@ -4,8 +4,7 @@ Polly helps you to answer your customers queries. Use this package to add the de
 #### Contents
 1. Installation
 2. Basic Usage
-3. Customization
-4. License
+3. License
 
 #### Installation
 Make sure you have an account at [Polly](https://app.polly.help/) and have created a publication.
@@ -17,59 +16,27 @@ meteor add kiewietr:polly
 ```
 
 #### Basic usage
-First configure your publication Id somewhere on the client:
+First configure your publication Id in your meteor settings file:
 ```
-client/polly.js:
+settings.json:
 
-Polly.options.publicationId = 'fiB5dA5C9D6tieKdq';
+{
+    "public" : {
+        "polly" : {
+            "publication" : "fiB5dA5C9D6tieKdq"
+        }
+    }
+}
 ```
 
-Add the helper link to any page using:
+Add the basic helper link to any page using:
 ```
 {{> pollyHelpLink}}
 ```
 
-You can also open the Polly help center with any template event using:
+You can also open the Polly help center with any template element using class showPollyHelp:
 ```
-Template.someTemplate.events({
-    'click #someElement' : function () {
-        Polly.show()
-    }
-});
-```
-
-#### Customization
-The basic options are as follows:
-```
-Polly.options = {
-    	helpcenter: {
-    		width: 900, // Helpcenter lightbox width
-    		height: 500, // Helpcenter lightbox height
-    		closeButtonBackgroundColor: '#fff', // background color of close button
-    		closeButtonForegroundColor: '#000' // foreground / text color of close button
-    	}
-    }
-```
-
-Simply overwrite any options like this:
-```
-client/polly.js:
-
-Polly.options.helpcenter.closeButtonForegroundColor = 'red'
-```
-
-Or set the full options when you want to customize all options:
-```
-client/polly.js:
-
-Polly.options = {
-    	helpcenter: {
-    		width: 600, // Helpcenter lightbox width
-    		height: 750, // Helpcenter lightbox height
-    		closeButtonBackgroundColor: 'red', // background color of close button
-    		closeButtonForegroundColor: '#fff' // foreground / text color of close button
-    	}
-    }
+<a href="#" class="showPollyHelp">Help</a>
 ```
 
 #### License
