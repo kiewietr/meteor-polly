@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // add polly css
     var s = document.createElement("link");
     s.rel = "stylesheet";
-    s.href = "https://cdn.rawgit.com/kiewietr/polly/public/polly.css";
+    s.href = "https://public.polly.help/pollycss/" + Meteor.settings.public.polly.publication;
     document.head.appendChild(s);
 })
 

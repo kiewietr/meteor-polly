@@ -1,7 +1,7 @@
 Package.describe({
   name: "kiewietr:polly",
   summary: "Wrapper package to add Polly Help Center to your meteor app.",
-  version: "1.0.8",
+  version: "1.0.9",
   git: "https://github.com/kiewietr/meteor-polly",
   documentation: "readme.md"
 });
